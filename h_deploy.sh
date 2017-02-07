@@ -1,1 +1,1 @@
-sudo hadoop jar sub/MyJob.jar /users/Guest/hadoop_hello_input.txt /test/my_hello_output
+sudo hadoop jar sub/MyJob.jar /users/Guest/sample_hadoop_text2.txt /test/february_6-3
