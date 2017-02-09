@@ -5,19 +5,16 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class MyJob {
+public class FirstLetter {
 	public static void main(String[] args) throws Exception {
-		if (2 == 3) {
-			throw new Exception();
-		}
 
 		if (args.length != 2) {
 			System.exit(-1);
 		}
 
 		Job j = new Job();
-		j.setJarByClass(MyJob.class);
-		j.setJobName("Good job, Andrew!");
+		j.setJarByClass(FirstLetter.class);
+		j.setJobName("FirstLetter");
 
 		FileInputFormat.addInputPath(j, new Path(args[0]));
 		FileOutputFormat.setOutputPath(j, new Path(args[1]));
